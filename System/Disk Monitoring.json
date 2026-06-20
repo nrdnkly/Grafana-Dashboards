@@ -1,0 +1,3432 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 29,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 24,
+      "panels": [],
+      "title": "Row title",
+      "type": "row"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 1,
+        "y": 1
+      },
+      "id": 2,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 C: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 8,
+        "y": 1
+      },
+      "id": 4,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 D: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 13,
+        "y": 1
+      },
+      "id": 6,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 G: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 17,
+        "y": 1
+      },
+      "id": 14,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 E: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 21,
+        "y": 1
+      },
+      "id": 8,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 H: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 0,
+        "y": 3
+      },
+      "id": 3,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 47,
+        "minVizWidth": 8,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 28
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "30",
+                "last"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/AGENT-/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "C:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 6,
+        "y": 3
+      },
+      "id": 5,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 49,
+        "minVizWidth": 8,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 28
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "30",
+                "last"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "D:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 4,
+        "x": 12,
+        "y": 3
+      },
+      "id": 28,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 47,
+        "minVizWidth": 8,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 28
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "30",
+                "last"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "G:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 4,
+        "x": 16,
+        "y": 3
+      },
+      "id": 29,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 48,
+        "minVizWidth": 8,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 28
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "30",
+                "last"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "E:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 4,
+        "x": 20,
+        "y": 3
+      },
+      "id": 27,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 43,
+        "minVizWidth": 8,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 28
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "30",
+                "last"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "H:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 1,
+        "y": 11
+      },
+      "id": 20,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 V: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 8,
+        "y": 11
+      },
+      "id": 7,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 F: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 14,
+        "y": 11
+      },
+      "id": 18,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 T: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 19,
+        "y": 11
+      },
+      "id": 12,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 L: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 6,
+        "x": 0,
+        "y": 13
+      },
+      "id": 21,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 36,
+        "minVizHeight": 0,
+        "minVizWidth": 0,
+        "namePlacement": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "5",
+                "max"
+              ],
+              "text": "top(5, avg)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "V:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 7,
+        "x": 6,
+        "y": 13
+      },
+      "id": 9,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 55,
+        "minVizHeight": 0,
+        "minVizWidth": 15,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 19
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "5",
+                "max"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "F:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 5,
+        "x": 13,
+        "y": 13
+      },
+      "id": 19,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 0,
+        "minVizWidth": 0,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {
+          "valueSize": 18
+        },
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "5",
+                "max"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "T:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 13
+      },
+      "id": 10,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 300,
+        "minVizHeight": 38,
+        "minVizWidth": 0,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "5",
+                "max"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ],
+                "name": "replaceAlias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "/(AGENT-)/",
+                " "
+              ],
+              "text": "replaceAlias(/(.*)/, $1)"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "L:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "30"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 2,
+        "y": 14
+      },
+      "id": 16,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#F2495C;\nborder-bottom:2px solid #F2495C;\npadding-bottom:4px;\nwidth:fit-content;\">\n💾 X: Disk Usage\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "dark-red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 6,
+        "x": 0,
+        "y": 16
+      },
+      "id": 17,
+      "options": {
+        "displayMode": "lcd",
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "maxVizHeight": 62,
+        "minVizHeight": 0,
+        "minVizWidth": 0,
+        "namePlacement": "top",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "showUnfilled": true,
+        "sizing": "manual",
+        "text": {},
+        "valueMode": "color"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [
+            {
+              "added": true,
+              "def": {
+                "category": "Filter",
+                "defaultParams": [
+                  5,
+                  "avg"
+                ],
+                "name": "top",
+                "params": [
+                  {
+                    "name": "number",
+                    "type": "int"
+                  },
+                  {
+                    "name": "value",
+                    "options": [
+                      "avg",
+                      "min",
+                      "max",
+                      "sum",
+                      "count",
+                      "median",
+                      "first",
+                      "last"
+                    ],
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "5",
+                "last"
+              ],
+              "text": "top(5, avg)"
+            },
+            {
+              "added": true,
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "$__zbx_host_name"
+              ],
+              "text": "setAlias()"
+            }
+          ],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "item": {
+            "filter": "X:: Space utilization"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": 0
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "5"
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 5,
+        "x": 5,
+        "y": 17
+      },
+      "id": 23,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"\nfont-size:18px;\nfont-weight:700;\ncolor:#A352CC;\nborder-bottom:2px solid #A352CC;\npadding-bottom:4px;\nwidth:fit-content;\">\n📸 System Snapshot\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.6.8",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "fieldMinMax": false,
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 10,
+        "x": 14,
+        "y": 17
+      },
+      "id": 25,
+      "options": {
+        "minVizHeight": 99,
+        "minVizWidth": 75,
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": true,
+        "showThresholdMarkers": false,
+        "sizing": "manual"
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "hostTags": [],
+          "item": {
+            "filter": "Zabbix agent availability"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "acknowledged": 2,
+            "count": false,
+            "disableDataAlignment": false,
+            "hostProxy": false,
+            "hostsInMaintenance": false,
+            "limit": 1001,
+            "minSeverity": 0,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "sortProblems": "default",
+            "useTimeRange": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "showProblems": "problems",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "Zabbix Agent Unreachable Count",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "labelsToFields": false,
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "0"
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Field": true,
+              "Last": false
+            },
+            "includeByName": {},
+            "indexByName": {
+              "Field": 1,
+              "Last": 0
+            },
+            "renameByName": {
+              "Count": "SUITABILITY",
+              "Field": "",
+              "Last": "HOST"
+            }
+          }
+        },
+        {
+          "id": "reduce",
+          "options": {
+            "includeTimeField": false,
+            "mode": "reduceFields",
+            "reducers": [
+              "count"
+            ]
+          }
+        }
+      ],
+      "transparent": true,
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto",
+              "wrapText": true
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Snapshot Count"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green"
+                    },
+                    {
+                      "color": "yellow",
+                      "value": 1
+                    },
+                    {
+                      "color": "purple",
+                      "value": 3
+                    },
+                    {
+                      "color": "light-red",
+                      "value": 5
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "applyToRow": false,
+                  "type": "color-background",
+                  "wrapText": true
+                }
+              },
+              {
+                "id": "custom.align",
+                "value": "center"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "VM Name"
+            },
+            "properties": [
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "applyToRow": false,
+                  "mode": "gradient",
+                  "type": "color-background",
+                  "wrapText": true
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "VM Name"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "semi-dark-blue"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 14,
+        "x": 0,
+        "y": 19
+      },
+      "id": 22,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [],
+          "group": {
+            "filter": "Sistem-vCenter"
+          },
+          "host": {
+            "filter": "/.*/"
+          },
+          "item": {
+            "filter": "/.*Snapshot Sayisi/"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "count": false,
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useTrends": "default",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "seriesToRows",
+          "options": {}
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "greater",
+                  "options": {
+                    "value": "0"
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "any",
+            "type": "include"
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": false,
+                "field": "Last"
+              }
+            ]
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "includeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "Field": "VM Name",
+              "Last": "Snapshot Count"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "NtGFrNY7k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "shades"
+          },
+          "custom": {
+            "align": "left",
+            "cellOptions": {
+              "applyToRow": false,
+              "mode": "gradient",
+              "type": "color-background",
+              "wrapText": true
+            },
+            "inspect": false
+          },
+          "fieldMinMax": false,
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "Open in Zabbix / Host",
+              "url": "http://10.29.81.197:8081/zabbix.php?action=latest.view&filter_set=1&filter_hostnames[]=${__field.labels.host}"
+            }
+          ],
+          "mappings": [],
+          "noValue": "HEALTHY",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 0
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 10,
+        "x": 14,
+        "y": 22
+      },
+      "id": 26,
+      "options": {
+        "cellHeight": "lg",
+        "footer": {
+          "countRows": false,
+          "enablePagination": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "11.6.8",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "countTriggersBy": "",
+          "evaltype": "0",
+          "functions": [],
+          "group": {
+            "filter": "$hostgroup"
+          },
+          "host": {
+            "filter": "/^AGENT-.*/"
+          },
+          "hostTags": [],
+          "item": {
+            "filter": "Zabbix agent availability"
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "macro": {
+            "filter": ""
+          },
+          "options": {
+            "acknowledged": 2,
+            "count": false,
+            "disableDataAlignment": false,
+            "hostProxy": false,
+            "hostsInMaintenance": false,
+            "limit": 1001,
+            "minSeverity": 0,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "sortProblems": "default",
+            "useTimeRange": false,
+            "useTrends": "false",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "schema": 12,
+          "showProblems": "problems",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "textFilter": "",
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "labelsToFields": false,
+            "reducers": [
+              "last"
+            ]
+          }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "0"
+                  }
+                },
+                "fieldName": "Last"
+              }
+            ],
+            "match": "all",
+            "type": "include"
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "includeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "Count": "SUITABILITY",
+              "Field": "HOST",
+              "Last": "STATUS"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 41,
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": ".*",
+        "allowCustomValue": false,
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "hide": 1,
+        "includeAll": true,
+        "label": "Host Group",
+        "multi": true,
+        "name": "hostgroup",
+        "options": [],
+        "query": "",
+        "refresh": 1,
+        "regex": "",
+        "type": "query"
+      },
+      {
+        "allValue": ".*",
+        "allowCustomValue": false,
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "definition": "",
+        "includeAll": true,
+        "label": "Host",
+        "multi": true,
+        "name": "host",
+        "options": [],
+        "query": {
+          "application": "",
+          "group": "$hostgroup",
+          "host": "",
+          "item": "",
+          "itemTag": "",
+          "queryType": "host",
+          "showDisabledItems": false
+        },
+        "refresh": 1,
+        "regex": "",
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Sistem Ekibi-Disk Monitoring",
+  "uid": "dffrpsjnqmpdsc",
+  "version": 63
+}
